@@ -1,1 +1,103 @@
 
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Yeni Uygulamaya Geçiş - Ehliyet Sınav Soruları</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+
+        body {
+            background-color: #f0f2f5;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+        }
+
+        .announcement-card {
+            background-color: white;
+            border-radius: 12px;
+            box-shadow: 0 8px 20px rgba(0,0,0,0.08);
+            padding: 40px 30px;
+            max-width: 450px;
+            width: 90%;
+            text-align: center;
+            border-top: 6px solid #2143b8; /* Ana sayfa başlığı ile aynı mavi */
+        }
+
+        .icon-container {
+            font-size: 65px;
+            color: #e86b3e; /* Ana sayfadaki banner turuncusu */
+            margin-bottom: 20px;
+            animation: bounce 2s infinite;
+        }
+
+        h1 {
+            font-size: 24px;
+            color: #333;
+            margin-bottom: 15px;
+        }
+
+        p {
+            font-size: 16px;
+            line-height: 1.6;
+            color: #666;
+            margin-bottom: 35px;
+        }
+
+        .download-btn {
+            display: inline-block;
+            background-color: #35a383; /* Ana sayfadaki buton yeşili */
+            color: white;
+            padding: 15px 30px;
+            border-radius: 8px;
+            font-size: 18px;
+            font-weight: bold;
+            text-decoration: none;
+            transition: all 0.3s ease;
+            box-shadow: 0 4px 10px rgba(53, 163, 131, 0.3);
+        }
+
+        .download-btn:hover {
+            background-color: #2b8b6e;
+            transform: translateY(-3px);
+            box-shadow: 0 6px 15px rgba(53, 163, 131, 0.4);
+        }
+
+        .download-btn i {
+            margin-right: 10px;
+        }
+
+        /* Hafif bir zıplama animasyonu (dikkat çekmek için) */
+        @keyframes bounce {
+            0%, 20%, 50%, 80%, 100% { transform: translateY(0); }
+            40% { transform: translateY(-10px); }
+            60% { transform: translateY(-5px); }
+        }
+    </style>
+</head>
+<body>
+
+    <div class="announcement-card">
+        <div class="icon-container">
+            <i class="fas fa-mobile-alt"></i>
+        </div>
+        <h1>Önemli Duyuru!</h1>
+        <p>Sizlere daha iyi bir hizmet sunabilmek için yenilendik. Artık tüm sınavlar ve güncel içeriklerimiz <strong>yeni uygulamamız</strong> üzerinden yayınlanacaktır.</p>
+        
+        <a href="https://indirr.ehliyet.io/" class="download-btn">
+            <i class="fas fa-download"></i> Yeni Uygulamayı İndir
+        </a>
+    </div>
+
+</body>
+</html>
